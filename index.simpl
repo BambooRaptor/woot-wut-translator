@@ -35,6 +35,12 @@
 			}
 		}
 
+		[#footer] {
+			[#copyright] {
+				Dhruv Narayan Arora © 2023
+			}
+		}
+
 		[#copied] {
 			[p] {
 				Text Copied

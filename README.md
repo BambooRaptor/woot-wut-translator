@@ -3,7 +3,12 @@
 Made for an in-joke where we said nothing but woot wut to each other. I decided to make our system of talking actually usable.
 
 ## Usage
+You can access the site here:
+https://woot-wut-translator.web.app/
+
+Alternatively,
 You can simply open the index.html file in any browser and start translating to and fro.
+
 
 ## Basics
 The translation works by converting each word to it's corresponding woot using the following steps.

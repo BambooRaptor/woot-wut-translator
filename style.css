@@ -98,6 +98,21 @@ p {
     animation: fade 2s linear;
 }
 
+#footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: #444;
+}
+
+#copyright {
+	width: max-content;
+	padding: 2rem;
+	margin: auto;
+}
+
+
 @keyframes fade {
   0%,100% { opacity: 0 }
   40% { opacity: 1 }

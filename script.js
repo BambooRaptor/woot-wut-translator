@@ -199,7 +199,7 @@ function toWootCode(text) {
 		word = word.split("")
 		wootWord = 'w'
 		word.forEach(char => {
-			if (isAlphaNumeric(char)) {
+			if (isAlphabet(char)) {
 				let code = getNormalizedCharCode(char)
 				code = padLeft(code.toString(3), 3);
 				console.log(code)
@@ -243,7 +243,7 @@ function toTextCode(text) {
 					compiledCode = ''
 				}
 
-				if (isAlphaNumeric(char)) {
+				if (isAlphabet(char)) {
 					codeCounter += 1
 					compiledCode += inverseTrinaryMatrix[char]
 				} else {
@@ -298,13 +298,12 @@ function convertToTrinary(x) {
 	return bin
 }
 
-function isAlphaNumeric(str) {
+function isAlphabet(str) {
 	var code, i, len;
 
 	for (i = 0, len = str.length; i < len; i++) {
 		code = (str.toLowerCase()).charCodeAt(i);
-		if (!(code > 47 && code < 58) && // numeric (0-9)
-			!(code > 96 && code < 123)) { // lower alpha (a-z)
+		if (!(code > 96 && code < 123)) { // lower alpha (a-z)
 			return false;
 		}
 	}
