@@ -1,0 +1,47 @@
+[html](lang="en") {
+	[head] {
+		[meta](charset="utf-8")
+		
+		[meta](
+			name="viewport" 
+			content="width=device-width, initial-scale=1.0"
+		)
+		[link](
+			rel="stylesheet" 
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		)
+		[link](rel="stylesheet" href="style.css")
+		[title] { Woot Wut Translator }
+	}
+
+	[body] {
+		[#content] {
+			[label](for="translator") {
+				[#heading] {
+					[h1#label-heading] { Text To Woot }
+					[button#switch-btn](type="submit"){ Switch }
+				}
+				[textarea#text-input](name="translator")
+			}
+
+			[h1#translate-out] { Woot Wut }
+			[#display] {
+				[p] { Tap to copy }
+				[#translation-display]
+			}
+
+			[#buttons] {
+				[button#translate-btn](type="submit"){ Translate }
+			}
+		}
+
+		[#copied] {
+			[p] {
+				Text Copied
+			}
+		}
+
+		[script](src="script.js")
+	}
+
+}

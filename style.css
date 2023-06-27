@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+html {
+	color-scheme: dark;
+	font-family: sans-serif;
+}
+
+#heading {
+	display: flex;
+	align-items: center;
+}
+
+#content {
+	margin: 0 auto;
+	width: 90vw;
+}
+
+#text-input, #translation-display {
+	background-color: #222;
+	width: 100%;
+	min-height: 10vh;
+	height: fit-content;
+	padding: 15px;
+	font-size: 2rem;
+}
+
+#translation-display {
+	background-color: #181818;
+} 
+
+#buttons {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	border: none;
+	padding: 2rem;
+	margin: 20px;
+	font-size: larger;
+}
+
+#translate-btn {
+	background-color: #232;
+}
+
+#translate-btn:hover {
+	background-color: #242;
+}
+
+#translate-btn:active {
+	background-color: #212;
+}
+
+#switch-btn {
+	background-color: #222;
+	font-size: large
+}
+
+#switch-btn:hover {
+	background-color: #333;
+}
+
+#switch-btn:active {
+	background-color: #111;
+}
+
+p {
+	color: #555;
+}
+
+#copied {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#copied > p {
+	font-size: 1rem;
+	width:max-content;
+	padding: 1rem;
+	margin: 5rem auto;
+	color: #999;
+	border-radius: 5px;
+	background-color: #333;
+}
+
+.fadeinout {
+    opacity: 1;
+    animation: fade 2s linear;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  40% { opacity: 1 }
+}
